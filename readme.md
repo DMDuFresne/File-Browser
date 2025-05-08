@@ -59,9 +59,9 @@ For better organization of your container configurations, we recommend storing t
 ```
 /portainer/Files/AppData/Config/
 ├── FileBrowser/     # FileBrowser configuration
-├── Plex/           # Plex configuration
-├── Sonarr/         # Sonarr configuration
-└── Radarr/         # Radarr configuration
+├── Plex/            # Plex configuration
+├── Sonarr/          # Sonarr configuration
+└── Radarr/          # Radarr configuration
 ```
 
 This structure helps keep your container configurations organized and easily accessible through FileBrowser.
@@ -71,7 +71,7 @@ This structure helps keep your container configurations organized and easily acc
 Once deployed, visit:
 
 ```
-http://<your-host-ip>:32771
+http://<your-host-ip>:30080
 ```
 
 Default path: `/`
