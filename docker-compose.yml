@@ -1,0 +1,13 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:v2.23.0
+    container_name: filebrowser
+    ports:
+      - "30080:80"
+    volumes:
+      - /portainer/Files/AppData/Config/FileBrowser:/config
+      - /portainer/Files/:/srv
+    environment:
+      - FB_BASEURL=/
+    restart: unless-stopped
+  
