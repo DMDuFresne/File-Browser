@@ -19,7 +19,7 @@ This template deploys [FileBrowser](https://github.com/filebrowser/filebrowser) 
 2. Select **Repository** as the build method
 3. Enter your Git repository URL:
    ```
-   https://github.com/your-username/filebrowser-portainer
+   https://github.com/DMDuFresne/File-Browser/blob/main/docker-compose.yml
    ```
 4. Deploy the stack
 5. Access FileBrowser and start managing your files
@@ -34,7 +34,7 @@ services:
     image: filebrowser/filebrowser:latest
     container_name: filebrowser
     ports:
-      - "32771:80"
+      - "30080:80"
     volumes:
       - /portainer/Files/AppData/Config/FileBrowser:/config
       - /portainer/Files/:/srv
